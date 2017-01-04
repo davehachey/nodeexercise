@@ -21,7 +21,7 @@ var messages = require('./messages')
 var app = express();
 
 app.get('/', function(req, res) {
-	res.write('If you see this, your route is working!');
+	res.write(messages.home);
 	res.end();
 });
 
